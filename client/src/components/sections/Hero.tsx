@@ -36,17 +36,25 @@ export function Hero() {
             <Button 
               size="lg" 
               onClick={() => window.open('https://wa.me/919999999999', '_blank')}
-              className="group relative bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-black font-bold text-lg sm:text-xl px-6 sm:px-8 py-4 sm:py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg] shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+              className="group relative shimmer-border glow-border bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-black font-bold text-lg sm:text-xl px-6 sm:px-8 py-4 sm:py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg] shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden sm:hover:scale-105 sm:transform sm:hover:scale-105"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               <span className="absolute inset-0 bg-black/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              
+              {/* Mobile-specific animations */}
+              <span className="sm:hidden absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-pulse"></span>
+              <span className="sm:hidden absolute -inset-2 bg-green-500 opacity-0 group-hover:opacity-30 blur-lg transition-opacity duration-500"></span>
+              
               <span className="relative skew-x-[10deg] flex items-center gap-2 sm:gap-3">
-                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-pulse group-hover:rotate-12 transition-transform duration-300" />
-                <span className="hidden xs:inline sm:hidden">Get ID</span>
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-pulse group-hover:rotate-12 transition-transform duration-300 sm:group-hover:rotate-12 sm:group-hover:animate-pulse sm:transition-transform sm:duration-300" />
+                <span className="hidden xs:inline sm:hidden group-hover:animate-bounce">Get ID</span>
                 <span className="xs:hidden sm:inline">Get ID on WhatsApp</span>
               </span>
               <span className="absolute inset-0 border-2 border-yellow-400 opacity-0 group-hover:opacity-100 transform scale-105 transition-all duration-300"></span>
               <span className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-0 group-hover:opacity-30 blur-md transition-opacity duration-300"></span>
+              
+              {/* Mobile glow effect */}
+              <span className="sm:hidden absolute inset-0 rounded-sm border-2 border-green-400 opacity-0 group-hover:opacity-60 group-hover:animate-ping transition-all duration-500"></span>
             </Button>
             <Button 
               size="lg" 
