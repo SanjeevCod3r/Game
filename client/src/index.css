@@ -75,3 +75,22 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 40s linear infinite;
+  white-space: nowrap;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 30s; /* Slower on mobile */
+  }
+}

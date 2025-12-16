@@ -56,12 +56,14 @@ export function Features() {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((feature, i) => (
-                <div key={i} className="bg-zinc-900/50 p-6 rounded-xl border border-white/5 hover:border-yellow-500/30 transition-colors">
-                  <div className="mb-4 bg-black w-16 h-16 rounded-full flex items-center justify-center border border-white/10">
-                    {feature.icon}
+                <div key={i} className="group bg-zinc-900/50 p-6 rounded-xl border border-white/5 hover:border-yellow-500/30 transition-all duration-300 hover:bg-zinc-800/50 hover:shadow-lg hover:shadow-yellow-500/10 hover:-translate-y-1 hover:scale-105">
+                  <div className="mb-4 bg-black w-16 h-16 rounded-full flex items-center justify-center border border-white/10 group-hover:border-yellow-500/50 group-hover:bg-gradient-to-br group-hover:from-yellow-500/20 group-hover:to-yellow-600/20 transition-all duration-300 group-hover:scale-110">
+                    <div className="group-hover:animate-pulse group-hover:rotate-12 transition-all duration-300">
+                      {feature.icon}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-display font-bold text-white mb-2">{feature.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{feature.desc}</p>
+                  <h3 className="text-xl font-display font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300">{feature.title}</h3>
+                  <p className="text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors duration-300">{feature.desc}</p>
                 </div>
               ))}
             </div>

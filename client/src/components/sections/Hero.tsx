@@ -33,13 +33,27 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-            <Button size="lg" className="bg-gradient-gold hover:opacity-90 text-black font-bold text-lg px-8 py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg]">
-              <span className="skew-x-[10deg] flex items-center gap-2">
-                <MessageCircle className="w-6 h-6" />
-                Get ID on WhatsApp
+            <Button 
+              size="lg" 
+              onClick={() => window.open('https://wa.me/919999999999', '_blank')}
+              className="group relative bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-black font-bold text-lg sm:text-xl px-6 sm:px-8 py-4 sm:py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg] shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="absolute inset-0 bg-black/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              <span className="relative skew-x-[10deg] flex items-center gap-2 sm:gap-3">
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-pulse group-hover:rotate-12 transition-transform duration-300" />
+                <span className="hidden xs:inline sm:hidden">Get ID</span>
+                <span className="xs:hidden sm:inline">Get ID on WhatsApp</span>
               </span>
+              <span className="absolute inset-0 border-2 border-yellow-400 opacity-0 group-hover:opacity-100 transform scale-105 transition-all duration-300"></span>
+              <span className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-0 group-hover:opacity-30 blur-md transition-opacity duration-300"></span>
             </Button>
-            <Button size="lg" variant="outline" className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 font-bold text-lg px-8 py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg]">
+            <Button 
+              size="lg" 
+              onClick={() => window.open('https://wa.me/919999999999', '_blank')}
+              variant="outline" 
+              className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 hover:border-yellow-400 hover:text-yellow-300 font-bold text-lg px-8 py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg] transform hover:scale-105 transition-all duration-300"
+            >
               <span className="skew-x-[10deg]">
                 View Demo
               </span>

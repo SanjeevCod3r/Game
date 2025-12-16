@@ -28,28 +28,21 @@ export default function Home() {
         <Process />
         
         {/* Banner CTA */}
-        <section className="py-12 sm:py-16 md:py-20 px-4">
+        <section className="py-20 px-4">
           <div className="container mx-auto">
-            <div className="bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-center relative overflow-hidden">
+            <div className="bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-3xl p-12 text-center relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
               <div className="relative z-10 max-w-3xl mx-auto">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-heading text-black mb-4 sm:mb-6 animate-pulse transform transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:text-yellow-600 relative">
-                  <span className="inline-block animate-bounce">READY</span>
-                  <span className="inline-block animate-pulse mx-1 sm:mx-2">TO</span>
-                  <span className="inline-block animate-bounce">WIN</span>
-                  <span className="inline-block animate-pulse mx-1 sm:mx-2">BIG</span>
-                  <span className="text-lg sm:text-2xl md:text-3xl lg:text-4xl">?</span>
-                </h2>
-                <p className="text-black/80 text-sm sm:text-lg md:text-xl font-medium mb-6 sm:mb-8 px-2">
+                <h2 className="text-4xl md:text-6xl font-heading text-black mb-6">READY TO WIN BIG?</h2>
+                <p className="text-black/80 text-xl font-medium mb-8">
                   Don't wait! Get your ID now and start your winning journey with the most trusted book in India.
                 </p>
                 <button 
                   onClick={() => window.open('https://wa.me/919999999999', '_blank')}
-                  className="bg-black text-white hover:bg-zinc-900 transition-colors px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg uppercase tracking-wide flex items-center gap-2 mx-auto shadow-lg hover:shadow-xl hover:scale-105 transform duration-200"
+                  className="bg-black text-white hover:bg-zinc-900 transition-colors px-8 py-4 rounded-full font-bold text-lg uppercase tracking-wide flex items-center gap-2 mx-auto shadow-2xl hover:scale-105 transform duration-200"
                 >
-                  <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-green-500" />
-                  <span className="hidden xs:inline sm:hidden">Chat Now</span>
-                  <span className="xs:hidden sm:inline">WhatsApp Us Now</span>
+                  <MessageCircle className="w-6 h-6 text-green-500" />
+                  WhatsApp Us Now
                 </button>
               </div>
             </div>

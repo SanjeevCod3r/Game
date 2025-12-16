@@ -32,7 +32,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-zinc-400">
                 <MessageCircle className="w-5 h-5 text-green-500" />
-                <span>+91 99999 99999</span>
+                <span>+1 (368) 300-2999</span>
               </li>
               <li className="flex items-center gap-3 text-zinc-400">
                 <Mail className="w-5 h-5 text-yellow-500" />

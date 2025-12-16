@@ -1,19 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useState } from "react";
+import { MessageCircle } from "lucide-react";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const NavLinks = () => (
-    <>
-      <a href="#home" className="text-white hover:text-primary transition-colors font-medium uppercase tracking-wider text-sm">Home</a>
-      <a href="#about" className="text-white hover:text-primary transition-colors font-medium uppercase tracking-wider text-sm">About Us</a>
-      <a href="#features" className="text-white hover:text-primary transition-colors font-medium uppercase tracking-wider text-sm">Why Choose Us</a>
-      <a href="#contact" className="text-white hover:text-primary transition-colors font-medium uppercase tracking-wider text-sm">Contact</a>
-    </>
-  );
+  const NavLinks = () => null;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
@@ -25,36 +14,26 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Desktop Nav */}
+        {/* Desktop Nav - Empty since nav links removed */}
         <div className="hidden md:flex items-center gap-8">
           <NavLinks />
         </div>
 
-        {/* CTA & Mobile Menu */}
+        {/* CTA */}
         <div className="flex items-center gap-4">
           <Button 
             size="lg"
-            className="hidden md:flex bg-green-600 hover:bg-green-700 text-white font-bold uppercase tracking-wider gap-2 animate-pulse"
+            onClick={() => window.open('https://wa.me/919999999999', '_blank')}
+            className="group relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold uppercase tracking-wider gap-2 px-6 py-3 rounded-full shadow-lg hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300 overflow-hidden"
           >
-            <MessageCircle className="w-5 h-5" />
-            WhatsApp Now
+            <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            <span className="relative flex items-center gap-2">
+              <MessageCircle className="w-5 h-5 group-hover:animate-bounce" />
+              <span className="hidden sm:inline">WhatsApp Now</span>
+              <span className="sm:hidden">Chat</span>
+            </span>
+            <span className="absolute inset-0 rounded-full border-2 border-green-400 opacity-0 group-hover:opacity-100 scale-110 animate-ping"></span>
           </Button>
-
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon" className="text-white">
-                <Menu className="w-6 h-6" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="bg-zinc-950 border-zinc-800 text-white w-[300px]">
-              <div className="flex flex-col gap-6 mt-10">
-                <NavLinks />
-                <Button className="bg-green-600 hover:bg-green-700 w-full uppercase font-bold">
-                  <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp Us
-                </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
         </div>
       </div>
     </nav>
