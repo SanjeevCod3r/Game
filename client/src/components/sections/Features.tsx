@@ -1,4 +1,4 @@
-import { Zap, Clock, UserCheck, Smartphone } from "lucide-react";
+import { Zap, Clock, UserCheck, Smartphone, MessageCircle } from "lucide-react";
 import winnerImg from "@assets/stock_images/happy_person_holding_c88431b2.jpg";
 
 export function Features() {
@@ -66,6 +66,38 @@ export function Features() {
                   <p className="text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors duration-300">{feature.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+        
+        {/* WhatsApp CTA Section */}
+        <div className="mt-16 px-4">
+          <div className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
+            <div className="relative z-10 max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-5xl font-heading text-black mb-4 animate-pulse">
+                READY TO START WINNING?
+              </h2>
+              <p className="text-black/80 text-lg md:text-xl font-medium mb-8 max-w-2xl mx-auto">
+                Join thousands of winners who trust Reddy Anna. Get your ID instantly and start your winning journey today!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button 
+                  onClick={() => window.open('https://wa.me/13683002999', '_blank')}
+                  className="group relative bg-black text-white hover:bg-zinc-900 transition-all px-8 py-4 rounded-full font-bold text-lg uppercase tracking-wide flex items-center gap-3 shadow-2xl hover:scale-105 transform duration-300 overflow-hidden"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <MessageCircle className="w-6 h-6 text-green-400 group-hover:animate-bounce" />
+                  <span className="relative">Get Your ID Now</span>
+                  <span className="absolute inset-0 rounded-full border-2 border-green-400 opacity-0 group-hover:opacity-100 scale-110 animate-ping"></span>
+                </button>
+                <div className="flex items-center gap-4 text-black/70">
+                  <div className="flex text-yellow-600">
+                    ★★★★★
+                  </div>
+                  <span className="font-medium">50K+ Happy Players</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
