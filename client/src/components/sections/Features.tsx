@@ -83,7 +83,7 @@ export function Features() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button 
-                  onClick={() => window.open('https://wa.me/13683002999', '_blank')}
+                  onClick={() => window.open('https://wa.me/639103872243', '_blank')}
                   className="group relative bg-black text-white hover:bg-zinc-900 transition-all px-8 py-4 rounded-full font-bold text-lg uppercase tracking-wide flex items-center gap-3 shadow-2xl hover:scale-105 transform duration-300 overflow-hidden"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>

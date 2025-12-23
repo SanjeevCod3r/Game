@@ -19,7 +19,7 @@ export function Footer() {
               <h3 className="text-2xl font-bold text-black mb-2">Ready to Win Big?</h3>
               <p className="text-black/80 mb-4">Get your ID instantly and start playing!</p>
               <button 
-                onClick={() => window.open('https://wa.me/13683002999', '_blank')}
+                onClick={() => window.open('https://wa.me/639103872243', '_blank')}
                 className="bg-black text-white hover:bg-zinc-900 transition-colors px-6 py-3 rounded-full font-bold uppercase tracking-wide flex items-center gap-2 mx-auto shadow-lg hover:scale-105 transform duration-200"
               >
                 <MessageCircle className="w-5 h-5 text-green-500" />

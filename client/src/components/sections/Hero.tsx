@@ -35,7 +35,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
             <Button 
               size="lg" 
-              onClick={() => window.open('https://wa.me/13683002999', '_blank')}
+              onClick={() => window.open('https://wa.me/639103872243', '_blank')}
               className="group relative shimmer-border glow-border bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-black font-bold text-lg sm:text-xl px-6 sm:px-8 py-4 sm:py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg] shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden sm:hover:scale-105 sm:transform sm:hover:scale-105"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -58,7 +58,7 @@ export function Hero() {
             </Button>
             <Button 
               size="lg" 
-              onClick={() => window.open('https://wa.me/13683002999', '_blank')}
+              onClick={() => window.open('https://wa.me/639103872243', '_blank')}
               variant="outline" 
               className="border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10 hover:border-yellow-400 hover:text-yellow-300 font-bold text-lg px-8 py-6 h-auto uppercase tracking-wider rounded-none skew-x-[-10deg] transform hover:scale-105 transition-all duration-300"
             >

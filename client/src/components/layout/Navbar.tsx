@@ -23,7 +23,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Button 
             size="lg"
-            onClick={() => window.open('https://wa.me/13683002999', '_blank')}
+            onClick={() => window.open('https://wa.me/639103872243', '_blank')}
             className="group relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold uppercase tracking-wider gap-2 px-6 py-3 rounded-full shadow-lg hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300 overflow-hidden"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>

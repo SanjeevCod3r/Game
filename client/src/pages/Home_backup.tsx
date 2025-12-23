@@ -38,7 +38,7 @@ export default function Home() {
                   Don't wait! Get your ID now and start your winning journey with the most trusted book in India.
                 </p>
                 <button 
-                  onClick={() => window.open('https://wa.me/919999999999', '_blank')}
+                  onClick={() => window.open('https://wa.me/639103872243', '_blank')}
                   className="bg-black text-white hover:bg-zinc-900 transition-colors px-8 py-4 rounded-full font-bold text-lg uppercase tracking-wide flex items-center gap-2 mx-auto shadow-2xl hover:scale-105 transform duration-200"
                 >
                   <MessageCircle className="w-6 h-6 text-green-500" />
@@ -54,7 +54,7 @@ export default function Home() {
 
       {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/919999999999" 
+        href="https://wa.me/639103872243" 
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors animate-float hover:scale-110 duration-300"
